@@ -21,7 +21,23 @@
 
  <script>
     /* dados de credenciais de acesso ao firibase*/
-    
+    const firebaseConfig = {
+        apiKey: "AIzaSyBHVDMYxIQ5kZyipKado5qUOYSQFHBENlA",
+        authDomain: "app-libri-sara.firebaseapp.com",
+        projectId: "app-libri-sara",
+        storageBucket: "app-libri-sara.appspot.com",
+        messagingSenderId: "1025578115968",
+        appId: "1:1025578115968:web:770feccb86d9c9acb79765",
+        measurementId: "G-RYCGXKJ2R4"
+      };
+    /* INICIALIZA O FIREBASE NA APLICAÇÃO WEB */
+    firebase.initializeApp(firebaseConfig);
+    /*INICIALIZA A CONEXÃO COM O BANCO NOSQL FIRESTORE*/
+    const db = firebase.firestore();
+    /*TESTE DA CONEXÃO COM O FIRESTORE*/
+    //console.log('TESTE DE CONEXÃO COM O FIRESTORE:')
+    //console.log(db);
+
  </script>
 
  <script src="app.js"></script>
