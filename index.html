@@ -6,13 +6,17 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style..css">
 </head>
-<body>
-    <h1>Web app libri - firebase: firestore</h1>
-    <div class="content">
-        <form id="add-book-form"></form>
-        <ul id="book-list"></ul>
-    </div>
-</body>
+    <body>
+        <h1>Web app libri - firebase: firestore</h1>
+            <div class="content">
+                 <form id="add-book-form">
+                        <input type="text" name="titulo" id="titulo" placeholder="digite o titulo do livro aqui">
+                        <input type="text" name="autor" id="autor" placeholder="digite o nome do autor aqui">
+                        <button>CADASTRAR</button>
+                    </form>
+                    <ul id="book-list"></ul>
+            </div>
+    </body>
  <!-- IMPORT DO SDK DO FIREBASE -->
  <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-app.js"></script>
 
